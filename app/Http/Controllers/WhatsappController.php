@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 
 use App\Services\FileRetrieveService;
 use App\Services\FileStorageService;
-use App\Services\MimeTypeService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Magyarjeti\MimeTypes\MimeTypeConverter;
@@ -17,7 +16,7 @@ class WhatsappController extends Controller
 {
 
     /**
-     * @var MimeTypeService
+     * @var MimeTypeConverter
      */
     private $mimeTypeService;
 
