@@ -17,5 +17,10 @@ class AppServiceProvider extends ServiceProvider
             'App\Services\FileRetrieveService',
             'App\Services\CurlFileRetrieveService'
         );
+
+        $this->app->bind(
+            'App\Services\FileStorageService',
+            'App\Services\FileSystemStorageService'
+        );
     }
 }

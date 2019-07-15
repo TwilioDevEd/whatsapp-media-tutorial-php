@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\FileRetrieveService;
+use App\Services\FileStorageService;
 use App\Services\MimeTypeService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -26,14 +27,22 @@ class WhatsappController extends Controller
     private $fileRetrieveService;
 
     /**
+     * @var FileStorageService
+     */
+    private $fileStorageService;
+
+    /**
      * Create a new controller instance.
      *
      * @param FileRetrieveService $fileRetrieveService
+     * @param FileStorageService $fileStorageService
      */
-    public function __construct(FileRetrieveService $fileRetrieveService)
+    public function __construct(FileRetrieveService $fileRetrieveService,
+                                FileStorageService $fileStorageService)
     {
         $this->mimeTypeService = new MimeTypeConverter();
         $this->fileRetrieveService = $fileRetrieveService;
+        $this->fileStorageService = $fileStorageService;
     }
 
     public function webhook(Request $request) {
@@ -54,7 +63,7 @@ class WhatsappController extends Controller
 
             $mediaSid = end($pathParts);
 
-            file_put_contents(storage_path( "app/{$mediaSid}.{$fileExtension}"), $fileContent);
+            $this->fileStorageService->saveFile("{$mediaSid}.{$fileExtension}", $fileContent);
         }
 
         Log::debug("Media files received: {$numMedia}");
