@@ -7,6 +7,8 @@
 Use Twilio to receive WhatsApp media messages. For a step-by-step tutorial see
 the [Twilio docs](https://www.twilio.com/docs/sms/tutorials/send-and-receive-media-messages-whatsapp-php).
 
+[![Build Status](https://travis-ci.com/TwilioDevEd/whatsapp-media-tutorial-php.svg?branch=master)](https://travis-ci.com/TwilioDevEd/whatsapp-media-tutorial-php)
+
 ## Local development
 
 This project is built using the [Laravel Lumen](https://lumen.laravel.com/) web
@@ -80,3 +82,4 @@ $ ./vendor/bin/phpunit
 * No warranty expressed or implied. Software is as is. Diggity.
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
+

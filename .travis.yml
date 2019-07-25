@@ -1,0 +1,9 @@
+language: php
+php:
+- 7.2
+install:
+- composer install
+
+before_script:
+  - cp .env.example .env
+  - ./vendor/bin/phpunit
