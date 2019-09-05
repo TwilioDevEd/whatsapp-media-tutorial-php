@@ -3054,16 +3054,16 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "5.34.1",
+            "version": "5.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d"
+                "reference": "a0e74651cdfba6dda780084e3dfc83002c0a71f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d",
-                "reference": "fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/a0e74651cdfba6dda780084e3dfc83002c0a71f2",
+                "reference": "a0e74651cdfba6dda780084e3dfc83002c0a71f2",
                 "shasum": ""
             },
             "require": {
@@ -3100,7 +3100,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2019-07-11T00:52:06+00:00"
+            "time": "2019-09-04T23:10:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3461,18 +3461,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -4675,8 +4675,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
