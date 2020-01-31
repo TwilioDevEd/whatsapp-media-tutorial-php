@@ -49,31 +49,15 @@ class WhatsappController extends Controller
         // Get number of images in the request
         $numMedia = (int) $request->input("NumMedia");
 
-        for($idx = 0; $idx < $numMedia; $idx++) {
-
-            $mediaUrl = $request->input("MediaUrl{$idx}");
-            $mimeType = $request->input("MediaContentType{$idx}");
-
-            $fileContent = $this->fileRetrieveService->requestContent($mediaUrl);
-
-            $fileExtension = $this->mimeTypeService->toExtension($mimeType);
-
-            $pathParts = explode('/', parse_url($mediaUrl)['path']);
-
-            $mediaSid = end($pathParts);
-
-            $this->fileStorageService->saveFile("{$mediaSid}.{$fileExtension}", $fileContent);
-        }
-
         Log::debug("Media files received: {$numMedia}");
 
         $response = new MessagingResponse();
         if ($numMedia === 0) {
             $message = $response->message("Send us an image!");
         } else {
-            $message = $response->message("Thanks for the image(s).");
+            $message = $response->message("Thanks for the image! Here's one for you!");
+            $message->media(GOOD_BOY_URL);
         }
-        $message->media(GOOD_BOY_URL);
 
         return $response;
     }
