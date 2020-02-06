@@ -3,46 +3,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\FileRetrieveService;
-use App\Services\FileStorageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Magyarjeti\MimeTypes\MimeTypeConverter;
 use Twilio\TwiML\MessagingResponse;
 
 const GOOD_BOY_URL = "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80";
 
 class WhatsappController extends Controller
 {
-
-    /**
-     * @var MimeTypeConverter
-     */
-    private $mimeTypeService;
-
-    /**
-     * @var FileRetrieveService
-     */
-    private $fileRetrieveService;
-
-    /**
-     * @var FileStorageService
-     */
-    private $fileStorageService;
-
-    /**
-     * Create a new controller instance.
-     *
-     * @param FileRetrieveService $fileRetrieveService
-     * @param FileStorageService $fileStorageService
-     */
-    public function __construct(FileRetrieveService $fileRetrieveService,
-                                FileStorageService $fileStorageService)
-    {
-        $this->mimeTypeService = new MimeTypeConverter();
-        $this->fileRetrieveService = $fileRetrieveService;
-        $this->fileStorageService = $fileStorageService;
-    }
 
     public function webhook(Request $request) {
 
