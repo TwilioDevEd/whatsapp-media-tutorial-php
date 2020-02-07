@@ -5,7 +5,7 @@
 # Receive, Download, and Reply with media in WhatsApp Messages. Powered by Twilio - PHP
 
 Use Twilio to receive WhatsApp media messages. For a step-by-step tutorial see
-the [Twilio docs](https://www.twilio.com/docs/sms/tutorials/send-and-receive-media-messages-whatsapp-php).
+the [Twilio docs](https://www.twilio.com/docs/sms/whatsapp/tutorial/send-and-receive-media-messages-whatsapp-php).
 
 [![Build Status](https://travis-ci.com/TwilioDevEd/whatsapp-media-tutorial-php.svg?branch=master)](https://travis-ci.com/TwilioDevEd/whatsapp-media-tutorial-php)
 

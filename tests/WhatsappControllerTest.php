@@ -16,26 +16,13 @@ class WhatsappControllerTest extends TestCase
      */
     public function testWebhook()
     {
-
-        $mockRetrieve = $this->createMock(CurlFileRetrieveService::class);
-        $mockRetrieve->expects($this->once())
-                     ->method("requestContent" )
-                     ->with('http://media.com/file')
-                     ->willReturn('text content');
-
-        $mockStorage = $this->createMock(FileSystemStorageService::class);
-        $mockStorage->expects($this->once())
-                    ->method("saveFile")
-                    ->with('file.txt', 'text content')
-                    ->willReturn(null);
-
         $request = new Request([
             'NumMedia' => '1',
             'MediaUrl0' => 'http://media.com/file',
             'MediaContentType0' => 'text/plain',
         ]);
 
-        $controller = new WhatsappController($mockRetrieve, $mockStorage);
+        $controller = new WhatsappController();
 
         $response = $controller->webhook($request);
 
