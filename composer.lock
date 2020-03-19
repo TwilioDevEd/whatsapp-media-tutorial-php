@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6d00b5efe0157ee5dc981c3d9139e5c",
+    "content-hash": "8bd26a212c9e77e577da287af43d1a2c",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1454,42 +1454,6 @@
                 "lumen"
             ],
             "time": "2019-07-02T15:34:29+00:00"
-        },
-        {
-            "name": "magyarjeti/mime-types",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/magyarjeti/mime-types.git",
-                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/magyarjeti/mime-types/zipball/cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
-                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
-                "shasum": ""
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^2.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Magyarjeti\\MimeTypes\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kovago Zoltan",
-                    "email": "kovagoz@444.hu"
-                }
-            ],
-            "description": "A converter between mime types and file extensions.",
-            "time": "2016-08-31T10:20:27+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3054,25 +3018,25 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "5.34.1",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d"
+                "reference": "eb38f4c6f0d02456d4cbcd7cf88570df9750cda3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d",
-                "reference": "fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/eb38f4c6f0d02456d4cbcd7cf88570df9750cda3",
+                "reference": "eb38f4c6f0d02456d4cbcd7cf88570df9750cda3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "apigen/apigen": "^4.1",
                 "guzzlehttp/guzzle": "^6.3",
-                "phpunit/phpunit": "4.5.*"
+                "phpunit/phpunit": ">=4.5",
+                "theseer/phpdox": "^0.12.0"
             },
             "suggest": {
                 "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
@@ -3080,7 +3044,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Twilio\\": "Twilio/"
+                    "Twilio\\": "src/Twilio/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3100,7 +3064,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2019-07-11T00:52:06+00:00"
+            "time": "2020-03-18T19:42:16+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3309,6 +3273,42 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "magyarjeti/mime-types",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magyarjeti/mime-types.git",
+                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magyarjeti/mime-types/zipball/cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
+                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
+                "shasum": ""
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Magyarjeti\\MimeTypes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kovago Zoltan",
+                    "email": "kovagoz@444.hu"
+                }
+            ],
+            "description": "A converter between mime types and file extensions.",
+            "time": "2016-08-31T10:20:27+00:00"
         },
         {
             "name": "mockery/mockery",
