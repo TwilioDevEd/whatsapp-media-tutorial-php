@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6d00b5efe0157ee5dc981c3d9139e5c",
+    "content-hash": "a2f42ceb9e17406b076fab968a5d92d4",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1454,42 +1454,6 @@
                 "lumen"
             ],
             "time": "2019-07-02T15:34:29+00:00"
-        },
-        {
-            "name": "magyarjeti/mime-types",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/magyarjeti/mime-types.git",
-                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/magyarjeti/mime-types/zipball/cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
-                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
-                "shasum": ""
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^2.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Magyarjeti\\MimeTypes\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kovago Zoltan",
-                    "email": "kovagoz@444.hu"
-                }
-            ],
-            "description": "A converter between mime types and file extensions.",
-            "time": "2016-08-31T10:20:27+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3214,16 +3178,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.8.0",
+            "version": "v1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
+                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
+                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
                 "shasum": ""
             },
             "require": {
@@ -3232,12 +3196,12 @@
             "require-dev": {
                 "ext-intl": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^1.5"
+                "squizlabs/php_codesniffer": "^2.9.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -3260,7 +3224,8 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2018-07-12T10:23:15+00:00"
+            "abandoned": true,
+            "time": "2020-12-11T09:56:16+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -3309,6 +3274,42 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "magyarjeti/mime-types",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magyarjeti/mime-types.git",
+                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magyarjeti/mime-types/zipball/cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
+                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
+                "shasum": ""
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Magyarjeti\\MimeTypes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kovago Zoltan",
+                    "email": "kovagoz@444.hu"
+                }
+            ],
+            "description": "A converter between mime types and file extensions.",
+            "time": "2016-08-31T10:20:27+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -3990,6 +3991,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-07-08T05:24:54+00:00"
         },
         {
@@ -4743,5 +4745,6 @@
         "php": ">=7.1.3",
         "ext-curl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
