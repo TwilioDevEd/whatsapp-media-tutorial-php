@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6d00b5efe0157ee5dc981c3d9139e5c",
+    "content-hash": "6b9e69d277dd23ff4dcdb9f1d6e957ee",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1454,42 +1454,6 @@
                 "lumen"
             ],
             "time": "2019-07-02T15:34:29+00:00"
-        },
-        {
-            "name": "magyarjeti/mime-types",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/magyarjeti/mime-types.git",
-                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/magyarjeti/mime-types/zipball/cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
-                "reference": "cbfce759ce0c22c893346d5ec0c61f65ba45b3ed",
-                "shasum": ""
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^2.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Magyarjeti\\MimeTypes\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kovago Zoltan",
-                    "email": "kovagoz@444.hu"
-                }
-            ],
-            "description": "A converter between mime types and file extensions.",
-            "time": "2016-08-31T10:20:27+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3054,25 +3018,24 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "5.34.1",
+            "version": "6.43.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d"
+                "url": "git@github.com:twilio/twilio-php.git",
+                "reference": "9619630098a6846e89b0caa162589879be6749a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d",
-                "reference": "fadef7c1bf6d39dcf7cb9a8606f595bedb56c67d",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/9619630098a6846e89b0caa162589879be6749a5",
+                "reference": "9619630098a6846e89b0caa162589879be6749a5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "apigen/apigen": "^4.1",
-                "guzzlehttp/guzzle": "^6.3",
-                "phpunit/phpunit": "4.5.*"
+                "guzzlehttp/guzzle": "^6.3 || ^7.0",
+                "phpunit/phpunit": ">=7.0"
             },
             "suggest": {
                 "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
@@ -3080,7 +3043,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Twilio\\": "Twilio/"
+                    "Twilio\\": "src/Twilio/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3094,13 +3057,13 @@
                 }
             ],
             "description": "A PHP wrapper for Twilio's API",
-            "homepage": "http://github.com/twilio/twilio-php",
+            "homepage": "https://github.com/twilio/twilio-php",
             "keywords": [
                 "api",
                 "sms",
                 "twilio"
             ],
-            "time": "2019-07-11T00:52:06+00:00"
+            "time": "2022-11-16T20:10:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4743,5 +4706,6 @@
         "php": ">=7.1.3",
         "ext-curl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
